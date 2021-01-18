@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="PpsNumberValidator" constructor="PpsNumberValidator" version="1.0.0" display-name-key="PpsNumberValidator" description-key="PpsNumberValidator description" control-type="standard" preview-image="img/preview.jpg">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="PPS_Number_Field" display-name-key="PPS_Number_Field" description-key="PPS Number field" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="PPS_Number_Valid" display-name-key="PPS_Number_Valid" description-key="Two option field to save the info if the PPS number is valid or not. Useful to validate the value in the forms." of-type="TwoOptions" usage="bound" required="false" />
+    <property name="Error_Message" display-name-key="Error_Message" description-key="Error message to display" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="Display_Icon" display-name-key="Display_Icon" description-key="Parameter to show or hide the icon in the textbox" of-type="Enum" usage="input" required="true">
+      <value name="No" display-name-key="No">0</value>
+      <value name="Yes" display-name-key="Yes">1</value>
+    </property>
+    <property name="Display_Error_Message" display-name-key="Display_Error_Message" description-key="Parameter to show error message for invalid PPS" of-type="Enum" usage="input" required="true">
+      <value name="No" display-name-key="No">0</value>
+      <value name="Yes" display-name-key="Yes">1</value>
+    </property>
+    <!-- 
+      Property node's of-type attribute can be of-type-group attribute. 
+      Example:
+      <type-group name="numbers">
+        <type>Whole.None</type>
+        <type>Currency</type>
+        <type>FP</type>
+        <type>Decimal</type>
+      </type-group>
+      <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
+    -->
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="css/PpsNumberValidator.css" order="1" />
+      <resx path="strings/PpsNumberValidator.1033.resx" version="1.0.0" />
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>
