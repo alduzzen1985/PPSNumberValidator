@@ -12,4 +12,4 @@ You can configure these parameters :
 </ul>
 <br/>
 
-<img src="./img/PPSNumber_ Screenshot.png"/>
+<img src="./img/PPSNumber_Screenshot.png"/>
