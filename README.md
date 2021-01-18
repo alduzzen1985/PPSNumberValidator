@@ -10,3 +10,6 @@ You can configure these parameters :
   <li><b>Display_Icon : </b> Enum to decide if display an icon for valid or invalid PPS Number</li>
   <li><b>Display_Error_Message : </b> Enum to decide if display error message or not</li>
 </ul>
+<br/>
+
+<img src="./img/PPSNumber_ Screenshot.png"/>
